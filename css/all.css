@@ -1,0 +1,377 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  margin: 0;
+}
+
+*, *::before, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  display: block;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.mt-5 {
+  margin-top: 40px;
+}
+
+.logo {
+  background-image: url(../img/logo-all-dark.svg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: transparent;
+}
+
+.logo a {
+  color: transparent;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+}
+
+.nav-link {
+  padding: 0px 30px;
+  color: #3F5D45;
+}
+
+.nav li:last-child a {
+  padding-left: 49px;
+}
+
+.nav a:hover {
+  opacity: 0.5;
+}
+
+.text-primary {
+  color: #3F5D45;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.prod-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.menu {
+  font-size: 24px;
+  font-weight: 600;
+  color: #3F5D45;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.menu li {
+  display: block;
+  background-color: #EAF0ED;
+  border: 1px solid #EAF0ED;
+  width: 300px;
+}
+
+.menu li:first-child {
+  padding: 16px 0px;
+  background-color: #3F5D45;
+  color: #fff;
+}
+
+.menu li a {
+  padding: 16px 0;
+  color: #3F5D45;
+}
+
+.menu a:hover {
+  opacity: 0.8;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-list {
+  width: 300px;
+  position: relative;
+  margin: 0 20px 20px 0;
+  border: 1px solid #EAF0ED;
+}
+
+.card-list:nth-child(2n) {
+  margin-right: 0px;
+}
+
+.top {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  background-color: #3F5D45;
+  color: #EAF0ED;
+  font-weight: 600;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  letter-spacing: 4px;
+  padding: 10px;
+}
+
+.like {
+  position: absolute;
+  right: 20px;
+  top: 19px;
+}
+
+.card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+}
+
+.card-text p {
+  padding: 14px 0px;
+}
+
+.prod-name {
+  margin: 0px 28px;
+}
+
+.prod-price {
+  font-weight: 600;
+  margin: 0px 20px;
+}
+
+.btn {
+  padding: 16px;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #3F5D45;
+  color: #fff;
+}
+
+.btn-block {
+  display: inline-block;
+}
+
+.btn-secondary {
+  background-color: #EAF0ED;
+  color: #3F5D45;
+  border: 1px solid #EAF0ED;
+}
+
+.btn-submit {
+  background-color: #FFE180;
+  color: #3F5D45;
+  background-image: url(../img/arrow_forward-24px.png);
+  background-repeat: no-repeat;
+}
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-list {
+  border: 1px solid #EAF0ED;
+}
+
+.page-list a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px;
+}
+
+.page-list:first-child, .page-list:last-child a {
+  padding: 18px;
+}
+
+.page-list.active .page-link {
+  background-color: #3F5D45;
+  color: #fff;
+}
+
+.page-list a:hover:not(.page-list:last-child a) {
+  background-color: #3F5D45;
+  color: #fff;
+}
+
+.disable {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.bg-primary {
+  background-color: #3F5D45;
+  color: #fff;
+}
+
+footer {
+  margin-top: 60px;
+}
+
+.footer-content {
+  width: 780px;
+  margin: 0 auto;
+}
+
+.sweet-mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
+}
+
+.sweet-mail h3 {
+  margin-left: 20px;
+}
+
+.sweet-mail img {
+  width: 40px;
+}
+
+.sweet-mail input {
+  margin-left: 174px;
+}
+/*# sourceMappingURL=all.css.map */
